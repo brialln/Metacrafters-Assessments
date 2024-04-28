@@ -14,7 +14,7 @@ contract MyContract {
     // require
     function requireEx(uint256 _newValue) external {
         require(msg.sender == user, "The caller is not the user");
-        require(_newValue != 0, "The new profit cannot be zero");
+        require(_newValue != 0, "The new value cannot be zero");
 
         value = _newValue;
     }
